@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+
+        <link rel="stylesheet" href="scroll.css"/>   
+
+    </head>
+    <body>
+        <div id="header">Header HTML</div>
+        <div id="wrapper">
+            <div id="scroller">
+                <ul>
+                    <li>Item HTML 1</li>
+                    <li>Item HTML 2</li>
+                    <li>Item HTML 3</li>
+                    <li>Item HTML 4</li>
+                    <li>Item HTML 5</li>
+                    <li>Item HTML 6</li>
+                    <li>Item HTML 7</li>
+                    <li>Item HTML 8</li>
+                    <li>Item HTML 9</li>
+                    <li>Item HTML 10</li>
+                    <li>Item HTML 11</li>
+                    <li>Item HTML 12</li>
+                    <li>Item HTML 13</li>
+                    <li>Item HTML 14</li>
+                    <li>Item HTML 15</li>
+                    <li>Item HTML 16</li>
+                    <li>Item HTML 17</li>
+                    <li>Item HTML 18</li>
+                    <li>Item HTML 19</li>
+                    <li>Item HTML 20</li>
+                    <li>Item HTML 21</li>
+                    <li>Item HTML 22</li>
+                    <li>Item HTML 23</li>
+                    <li>Item HTML 24</li>
+                    <li>Item HTML 25</li>
+                    <li>Item HTML 26</li>
+                    <li>Item HTML 27</li>
+                    <li>Item HTML 28</li>
+                    <li>Item HTML 29</li>
+                    <li>Item HTML 30</li>
+                    <li>Item HTML 31</li>
+                    <li>Item HTML 32</li>
+                    <li>Item HTML 33</li>
+                    <li>Item HTML 34</li>
+                    <li>Item HTML 35</li>
+                    <li>Item HTML 36</li>
+                    <li>Item HTML 37</li>
+                    <li>Item HTML 38</li>
+                    <li>Item HTML 39</li>
+                    <li>Item HTML 40</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">Footer HTML</div>
+    </body>
+    
+    <script type="text/javascript" src="iscroll.js" />
+    <script type="text/javascript">
+
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper');
+        }
+
+        // ici on désactive la gestion du scroll fournie par Webkit
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+        // et là on active la gestion fournie par iScroll4
+        document.addEventListener('DOMContentLoaded', setTimeout(function () { loaded(); }, 200), false);
+
+    </script>
+
+</html>
