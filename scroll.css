@@ -21,7 +21,6 @@ header, #header {
     line-height:48px;
     background-color:#666;
     background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
-    border-bottom:1px solid #444;
     text-align:center;
     color:#fff;
 }
@@ -35,10 +34,9 @@ footer, #footer {
     line-height:48px;
     background-color:#666;
     background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
-    font-size:20px;
-    text-align:center;    
-    color:#fff;        
-}                
+    text-align:center;
+    color:#fff;
+}
 
 #wrapper {
     position:absolute;
