@@ -9,22 +9,21 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
         <link rel="stylesheet" href="scroll.css"/>
-        <style type="text/css">
-            #scroller {
-                top:0; bottom:0;
-                overflow-y: scroll;
+        <style type="text/css">           
+            #scroller { 
+                overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
                 /* -webkit-overflow-scrolling: auto; */
             }
 
-            header, footer, #header, #footer {
+            header, footer {
                 position: fixed;
             }
         </style>
 
     </head>
     <body>
-        <div id="header">Header HTML</div>
+        <header>Header HTML</header>
         <div id="wrapper">
             <div id="scroller">
                 <ul>
@@ -71,6 +70,6 @@
                 </ul>
             </div>
         </div>
-        <div id="footer">Footer HTML</div>
+        <footer>Footer HTML</footer>
     </body>
 </html>
