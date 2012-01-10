@@ -8,10 +8,13 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
+        <script type="text/javascript" src="iscroll/iscroll.js"></script>
+
         <link rel="stylesheet" href="scroll.css"/>
 
     </head>
     <body>
+
         <div id="header">Header HTML</div>
         <div id="wrapper">
             <div id="scroller">
@@ -60,22 +63,12 @@
             </div>
         </div>
         <div id="footer">Footer HTML</div>
+
+        <script type="text/javascript">
+
+            var	myScroll = new iScroll('wrapper');
+
+        </script>
+
     </body>
-    
-    <script type="text/javascript" src="iscroll4/iscroll.js" />
-    <script type="text/javascript">
-
-        var myScroll;
-        function loaded() {
-            myScroll = new iScroll('wrapper');
-        }
-
-        // ici on désactive la gestion du scroll fournie par Webkit
-        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-
-        // et là on active la gestion fournie par iScroll4
-        document.addEventListener('DOMContentLoaded', setTimeout(function () { loaded(); }, 200), false);
-
-    </script>
-
 </html>
